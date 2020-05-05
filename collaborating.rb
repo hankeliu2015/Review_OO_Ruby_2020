@@ -37,7 +37,6 @@ class Instrument
   def initialize(type, serial_number)
     @type = type
     @serial_number = serial_number
-    @musician = musician
   end
 
 end #end of class
@@ -50,3 +49,7 @@ guitar = Instrument.new("Guitar", "089093845")
 beth = Musician.new("Beth", clari)
 gemma = Musician.new("Gemma", trumpt)
 aki = Musician.new("Aki", piano)
+
+gemma.band = tea
+beth.band = tea
+aki.band = stars
