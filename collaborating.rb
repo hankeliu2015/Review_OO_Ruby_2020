@@ -1,12 +1,11 @@
 # musician and instruments Collaborating Objects
 # band --< Musician -- Instrument
-# band has many musicians, 
+# band has many musicians,
 # musician belong to a band
 # band has many instruments through musician,
 # instrument belongs to a band through musician
 # musican has a instrument
 # instrument belong to a musician
-
 
 
 class Band
@@ -50,7 +49,6 @@ class Musician
     @instrument = instrument
     instrument.musician = self
   end
-
 
 end #end of class
 
