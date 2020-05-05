@@ -1,5 +1,5 @@
 # musician and instruments Collaborating Objects
-# band --< Musician >-- Instrument 
+# band --< Musician >-- Instrument
 
 class Band
   attr_accessor :name
@@ -26,6 +26,7 @@ class Musician
   def initialize(name, instrument)
     @name = name
     @instrument = instrument
+    instrument.musician = self
   end
 
 end #end of class
@@ -33,7 +34,7 @@ end #end of class
 class Instrument
   attr_accessor :type, :serial_number, :musician
 
-  def initialize(type, serial_number, musician)
+  def initialize(type, serial_number)
     @type = type
     @serial_number = serial_number
     @musician = musician
